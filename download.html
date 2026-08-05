@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Download the official LakshPE Android application."
+    />
+
+    <meta name="theme-color" content="#090713" />
+
+    <title>Download LakshPE for Android</title>
+
+    <style>
+      :root {
+        font-family:
+          Arial,
+          Helvetica,
+          sans-serif;
+        color: #ffffff;
+        background: #080710;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        padding: 28px 16px 60px;
+        background:
+          radial-gradient(
+            circle at 80% 5%,
+            rgba(146, 71, 255, 0.28),
+            transparent 32%
+          ),
+          linear-gradient(
+            155deg,
+            #080710,
+            #11101d 52%,
+            #090810
+          );
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .store-page {
+        width: min(780px, 100%);
+        margin: 0 auto;
+      }
+
+      .back-link {
+        min-height: 42px;
+        margin-bottom: 22px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #aaa4b6;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .back-link:hover {
+        color: #ffffff;
+      }
+
+      .app-card {
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 28px;
+        background: rgba(16, 14, 27, 0.95);
+        box-shadow: 0 34px 90px rgba(0, 0, 0, 0.45);
+      }
+
+      .app-header {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+      }
+      .app-icon {
+        width: 112px;
+        height: 112px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 28px;
+        color: #ffffff;
+        background:
+          linear-gradient(
+            140deg,
+            #5123df,
+            #a52dff 55%,
+            #ff3d92
+          );
+        box-shadow: 0 20px 48px rgba(117, 61, 255, 0.4);
+        font-size: 58px;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      .app-name {
+        font-size: clamp(32px, 7vw, 48px);
+        letter-spacing: 1px;
+      }
+
+      .developer {
+        margin-top: 7px;
+        color: #bf91ff;
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      .category {
+        margin-top: 8px;
+        color: #aaa5b5;
+        font-size: 14px;
+      }
+
+      .app-stats {
+        padding: 22px 16px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .stat {
+        padding: 4px 12px;
+        text-align: center;
+      }
+
+      .stat + .stat {
+        border-left: 1px solid rgba(255, 255, 255, 0.09);
+      }
+
+      .stat strong {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 15px;
+      }
+
+      .stat span {
+        color: #928c9e;
+        font-size: 12px;
+      }
+
+      .app-content {
+        padding: 30px;
+      }
+
+      .download-button {
+        min-height: 58px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 17px;
+        color: #ffffff;
+        background:
+          linear-gradient(
+            90deg,
+            #7152ff,
+            #c442ff
+          );
+        box-shadow: 0 18px 44px rgba(118, 69, 255, 0.4);
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0.6px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .download-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 23px 52px rgba(118, 69, 255, 0.54);
+      }
+
+      .download-note {
+        margin-top: 13px;
+        color: #8f8999;
+        font-size: 12px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .section {
+        margin-top: 34px;
+      }
+
+      .section h2 {
+        margin-bottom: 14px;
+        font-size: 22px;
+      }
+
+      .section p {
+        color: #aaa5b3;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .feature-list {
+        margin-top: 18px;
+        display: grid;
+        gap: 11px;
+      }
+
+      .feature {
+        padding: 15px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.035);
+        color: #b2adba;
+        font-size: 13px;
+      }
+
+      .feature-mark {
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        color: #ffffff;
+        background: rgba(126, 76, 255, 0.28);
+        font-weight: 900;
+      }
+
+      .information {
+        margin-top: 18px;
+        display: grid;
+        gap: 11px;
+      }
+
+      .information-row {
+        padding: 15px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .information-row span {
+        color: #9892a3;
+        font-size: 13px;
+      }
+
+      .information-row strong {
+        font-size: 13px;
+        text-align: right;
+      }
+
+      .official-notice {
+        margin-top: 28px;
+        padding: 17px;
+        border: 1px solid rgba(184, 135, 255, 0.22);
+        border-radius: 15px;
+        color: #aaa5b3;
+        background: rgba(117, 74, 255, 0.09);
+        font-size: 12px;
+        line-height: 1.75;
+      }
+
+      @media (max-width: 560px) {
+        body {
+          padding: 18px 11px 40px;
+        }
+
+        .app-header {
+          padding: 22px 18px;
+          align-items: flex-start;
+        }
+
+        .app-icon {
+          width: 84px;
+          height: 84px;
+          border-radius: 22px;
+          font-size: 43px;
+        }
+
+        .app-name {
+          font-size: 29px;
+        }
+
+        .developer {
+          font-size: 13px;
+        }
+
+        .category {
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        .app-stats {
+          padding: 18px 4px;
+        }
+
+        .stat {
+          padding: 3px 6px;
+        }
+
+        .stat strong {
+          font-size: 12px;
+          line-height: 1.4;
+        }
+
+        .stat span {
+          font-size: 10px;
+        }
+
+        .app-content {
+          padding: 23px 18px;
+        }
+
+        .information-row {
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="store-page">
+      <a class="back-link" href="/">
+        ← Back to LakshPE
+      </a>
+
+      <article class="app-card">
+        <header class="app-header">
+<div class="app-icon" aria-hidden="true">
+  <img
+    src="/assets/lakshpe-icon.png"
+    alt=""
+    style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: inherit;"
+  />
+</div>
+
+<div>
+  <h1 class="app-name">LakshPE</h1>
+            <p class="developer">
+              LakshPE Entertainment
+            </p>
+
+            <p class="category">
+              Entertainment · International Stories
+            </p>
+          </div>
+        </header>
+
+        <section class="app-stats">
+          <div class="stat">
+            <strong>New Release</strong>
+            <span>Downloads</span>
+          </div>
+
+          <div class="stat">
+            <strong>Not Yet Rated</strong>
+            <span>Rating</span>
+          </div>
+
+          <div class="stat">
+            <strong>Android 8.0+</strong>
+            <span>Required</span>
+          </div>
+        </section>
+
+        <div class="app-content">
+          <a
+            class="download-button"
+href="https://github.com/iqq76359-ship-it/lakshpe-downloads/releases/download/v1.0.0/LakshPE-v1.0.0-release.apk"
+            download
+          >
+            DOWNLOAD LakshPE APK
+          </a>
+
+          <p class="download-note">
+            The installation file will be available after the
+            official LakshPE APK has been added.
+          </p>
+
+          <section class="section">
+            <h2>About this app</h2>
+
+            <p>
+              Discover international thrillers, science-fiction
+              mysteries, featured stories, and selected video
+              experiences with LakshPE.
+            </p>
+
+            <div class="feature-list">
+              <div class="feature">
+                <span class="feature-mark">✓</span>
+                English-subtitled video experiences
+              </div>
+
+              <div class="feature">
+                <span class="feature-mark">✓</span>
+                Mobile-friendly cinematic interface
+              </div>
+
+              <div class="feature">
+                <span class="feature-mark">✓</span>
+                Featured international stories
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>App information</h2>
+
+            <div class="information">
+              <div class="information-row">
+                <span>Version</span>
+                <strong>1.0.0</strong>
+              </div>
+
+              <div class="information-row">
+                <span>Status</span>
+                <strong>Preview Release</strong>
+              </div>
+
+              <div class="information-row">
+                <span>Category</span>
+                <strong>Entertainment</strong>
+              </div>
+
+              <div class="information-row">
+                <span>Language</span>
+                <strong>English</strong>
+              </div>
+
+              <div class="information-row">
+                <span>Developer</span>
+                <strong>LakshPE</strong>
+              </div>
+            </div>
+          </section>
+
+          <div class="official-notice">
+            This is the official LakshPE Android download page.
+            It is currently an independent download page and not
+            a verified Google Play Store listing. A verified store
+            link can be added after publication.
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
