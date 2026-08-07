@@ -86,22 +86,15 @@
         </div>
 
 <article class="featured-card" id="the-guest">
-<div class="featured-visual video-active">
-  <video
-    class="featured-video"
-    controls
-    playsinline
-    preload="metadata"
-poster="${t}"  >
-<source
-  src="/assets/videos/featured-story-clean-final-mask.mp4"
-  type="video/mp4"
-/>    Your browser does not support video playback.
-  </video>
+<div class="featured-visual">
+  <img
+    class="featured-image"
+    src="${t}"
+    alt="LakshPE featured story"
+  />
 
-  <span class="featured-badge">NOW PLAYING</span>
-</div>
-          <div class="featured-copy">
+  <span class="featured-badge">FEATURED STORY</span>
+</div>          <div class="featured-copy">
             <p class="eyebrow">LakshPE EXCLUSIVE</p>
 
             <h3>THE NEXT STORY</h3>
