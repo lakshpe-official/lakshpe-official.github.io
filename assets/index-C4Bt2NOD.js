@@ -59,7 +59,7 @@
                 behavior: 'smooth'
               })"
             >
-              ▶ WATCH FEATURED
+EXPLORE FEATURED
             </button>
 
             <button
@@ -78,70 +78,25 @@
       <section class="content-section" id="featured">
         <div class="section-heading">
           <div>
-            <p class="section-label">NOW SHOWING</p>
-            <h2>Featured Story</h2>
+<p class="section-label">FEATURED COLLECTION</p>            <h2>Featured Story</h2>
           </div>
 
           <span class="section-status">New Release</span>
         </div>
 
-<article class="featured-card" id="the-guest">
-<div class="featured-visual">
-  <img
-    class="featured-image"
-    src="${t}"
-    alt="LakshPE featured story"
-  />
-
-  <span class="featured-badge">FEATURED STORY</span>
-</div>          <div class="featured-copy">
-            <p class="eyebrow">LakshPE EXCLUSIVE</p>
-
-            <h3>THE NEXT STORY</h3>
-
-            <p>
-              A cinematic international story filled with ambition,
-              mystery, emotion, and unexpected choices.
-            </p>
-
-            <div class="feature-tags">
-              <span>Drama</span>
-              <span>International</span>
-              <span>English Subtitles</span>
-            </div>
-
-            <button
-              class="primary-button"
-              type="button"
-              disabled
-            >
-              VIDEO COMING SOON
-            </button>
-          </div>
-        </article>
 
 <article
   class="featured-card silo-featured-card"
   id="silo"
->        <div class="featured-visual video-active">
-          <video
-            class="featured-video"
-            controls
-            playsinline
-            preload="metadata"
-            poster="${n}"
-          >
-            <source
-              src="/assets/videos/silo-english-clean-final.mp4"
-              type="video/mp4"
-            />
+<div class="featured-visual">
+  <img
+    class="featured-image"
+    src="${n}"
+    alt="LakshPE featured story"
+  />
 
-            Your browser does not support video playback.
-          </video>
-
-          <span class="featured-badge">NOW PLAYING</span>
-        </div>
-
+  <span class="featured-badge">FEATURED STORY</span>
+</div>
         <div class="featured-copy">
           <p class="eyebrow">LakshPE FEATURED</p>
 
@@ -175,39 +130,38 @@
             New videos and posters will be added here.
           </p>
           <a
-            class="movie-card"
-            href="#the-guest"
-            aria-label="Watch The Guest"
-          >
-            <div class="movie-cover">
-              <img
-                src="${t}"
-                alt="The Guest poster"
-              />
+<a
+  class="movie-card"
+  href="#featured"
+  aria-label="Explore The Guest"
+>
+  <div class="movie-cover">
+    <img
+      src="${t}"
+      alt="The Guest poster"
+    />
 
-              <span class="movie-badge">WATCH NOW</span>
-            </div>
-
+    <span class="movie-badge">FEATURED</span>
+  </div>
             <div class="movie-information">
               <p>Thriller · Action</p>
               <h3>THE GUEST</h3>
               <span>English Subtitles · HD</span>
             </div>
           </a>
-          <a
-            class="movie-card"
-            href="#silo"
-            aria-label="Watch Silo"
-          >
-            <div class="movie-cover">
-              <img
-                src="${n}"
-                alt="Silo poster"
-              />
+<a
+  class="movie-card"
+  href="#silo"
+  aria-label="Explore Silo"
+>
+  <div class="movie-cover">
+    <img
+      src="${n}"
+      alt="Silo poster"
+    />
 
-              <span class="movie-badge">WATCH NOW</span>
-            </div>
-
+    <span class="movie-badge">FEATURED</span>
+  </div>
             <div class="movie-information">
               <p>Science Fiction · Mystery</p>
               <h3>SILO</h3>
@@ -236,8 +190,7 @@
         <div class="download-copy">
           <p class="section-label">LakshPE FOR ANDROID</p>
 
-          <h2>Watch More With LakshPE</h2>
-
+<h2>Discover More With LakshPE</h2>
           <p>
             The official Android download page and APK installation
             button will be added after the new application package
@@ -323,11 +276,10 @@
         Home
       </a>
 
-      <a href="#featured">
-        <span>▶</span>
-        Watch
-      </a>
-
+<a href="#featured">
+  <span>◆</span>
+  Explore
+</a>
       <a href="#library">
         <span>▦</span>
         Library
